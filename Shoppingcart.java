@@ -5,11 +5,13 @@ public class Shoppingcart {
 Scanner input = new Scanner(System.in) ; 
  double price ;        // variable which acts as a place holder . (Real price )
  double Newprice ;       // variable for calculating price after the user provides quantity 
+
+double quantity ;            // the quantity of food . 
+boolean valid ; //checks if the food exists 
 System.out.print(" What do you want to buy (Pizza , Burger , Salad , Coke . Chicken) ?  : ");
 String food = input.nextLine() ; 
-double quantity ;            // the quantity of food . 
 String qr = "Do you want to pay ? Please user this QR" ; //place holder for qr ! 
-boolean valid ; //checks if the food exists 
+
                  // if statements to Ask details about the food the customers want . 
 if (food.equals("Pizza") )   { 
 System.out.print("Please enter the quantity :  ");
